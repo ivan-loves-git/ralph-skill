@@ -1,0 +1,33 @@
+{
+  "projectName": "Your Project Name",
+  "branchName": "ralph/feature-name",
+  "description": "Brief description of what this Ralph session will build",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "First user story title",
+      "description": "More detailed description of what this story accomplishes",
+      "acceptanceCriteria": [
+        "Specific, measurable criterion 1",
+        "Specific, measurable criterion 2",
+        "typecheck passes"
+      ],
+      "priority": 1,
+      "passes": false,
+      "notes": "Any additional context for the agent"
+    },
+    {
+      "id": "US-002",
+      "title": "Second user story title",
+      "description": "Description of story 2",
+      "acceptanceCriteria": [
+        "Criterion for story 2",
+        "Another criterion",
+        "typecheck passes"
+      ],
+      "priority": 2,
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}

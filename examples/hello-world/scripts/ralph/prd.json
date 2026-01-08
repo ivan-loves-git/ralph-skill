@@ -1,0 +1,49 @@
+{
+  "projectName": "Hello World Greeter",
+  "branchName": "ralph/hello-world",
+  "description": "A simple greeting script to practice the Ralph workflow",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Create basic greeting function",
+      "description": "Create a JavaScript file with a function that returns 'Hello, World!'",
+      "acceptanceCriteria": [
+        "File src/greet.js exists",
+        "Contains a greet() function",
+        "greet() returns 'Hello, World!'",
+        "Running 'node src/greet.js' prints the greeting"
+      ],
+      "priority": 1,
+      "passes": false,
+      "notes": "Keep it simple - just a basic function"
+    },
+    {
+      "id": "US-002",
+      "title": "Add personalized greeting",
+      "description": "Modify greet() to accept a name parameter",
+      "acceptanceCriteria": [
+        "greet() accepts optional name parameter",
+        "greet() returns 'Hello, World!' when no name given",
+        "greet('Ivan') returns 'Hello, Ivan! Welcome!'",
+        "Running 'node src/greet.js Ivan' prints personalized greeting"
+      ],
+      "priority": 2,
+      "passes": false,
+      "notes": "Use process.argv to get command line argument"
+    },
+    {
+      "id": "US-003",
+      "title": "Add multiple greeting styles",
+      "description": "Add formal and casual greeting options",
+      "acceptanceCriteria": [
+        "greet(name, 'formal') returns 'Good day, [name]. How may I assist you?'",
+        "greet(name, 'casual') returns 'Hey [name]! What's up?'",
+        "Default style is 'normal' (current behavior)",
+        "Running 'node src/greet.js Ivan casual' works"
+      ],
+      "priority": 3,
+      "passes": false,
+      "notes": "Second command line argument for style"
+    }
+  ]
+}

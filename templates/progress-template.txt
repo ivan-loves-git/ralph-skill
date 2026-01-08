@@ -1,0 +1,21 @@
+# Ralph Progress Log
+Started: [DATE]
+Project: [PROJECT NAME]
+
+## Codebase Patterns
+<!-- Add patterns discovered during development here -->
+<!-- These are read FIRST by Ralph each iteration -->
+<!-- Examples: -->
+<!-- - Migrations: Always use IF NOT EXISTS -->
+<!-- - Tests: Run dev server before e2e tests -->
+<!-- - API routes: Export named functions -->
+
+## Key Files
+<!-- List important files Ralph should know about -->
+<!-- Examples: -->
+<!-- - src/db/schema.ts - Database schema -->
+<!-- - src/lib/auth.ts - Authentication utilities -->
+
+---
+
+<!-- Ralph appends story logs below this line -->

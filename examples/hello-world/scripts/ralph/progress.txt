@@ -1,0 +1,15 @@
+# Ralph Progress Log
+Started: 2025-01-08
+Project: Hello World Greeter
+
+## Codebase Patterns
+- This is a simple Node.js project
+- Main file: src/greet.js
+- Use process.argv for command line arguments
+
+## Key Files
+- src/greet.js - Main greeting script
+
+---
+
+<!-- Ralph will append story logs below -->
