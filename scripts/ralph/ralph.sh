@@ -17,9 +17,8 @@ for i in $(seq 1 $MAX_ITERATIONS); do
   echo "═══════════════════════════════════════"
   echo ""
 
-  # Run Claude in print mode with the prompt
-  PROMPT=$(cat "$SCRIPT_DIR/prompt.md")
-  OUTPUT=$(claude -p "$PROMPT" --dangerously-skip-permissions 2>&1 | tee /dev/stderr) || true
+  # Pipe prompt to Claude Code and capture output
+  OUTPUT=$(cat "$SCRIPT_DIR/prompt.md" | claude --dangerously-skip-permissions 2>&1 | tee /dev/stderr) || true
 
   # Check if all stories are complete
   if echo "$OUTPUT" | grep -q "<promise>COMPLETE</promise>"; then
